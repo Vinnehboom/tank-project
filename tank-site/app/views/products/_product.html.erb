@@ -1,0 +1,9 @@
+<div class="card col col-md-5 border border-warning p-0 m-2">
+  <div class="card-body">
+    <div class="card-image"><%= image_tag product.image_url %></div>
+    <div class="card-title"><%= link_to product.title, product_path(product.id) %></div>
+    <div class="card-subtitle"><%= print_price(product.price) %></div>
+    <p class="card-text"><%= product.description %></p>
+
+  </div>
+</div>
